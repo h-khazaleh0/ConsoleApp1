@@ -3,6 +3,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        
+        Console.WriteLine("Ex1****************************************************************\n");
+       
         DateTime now = DateTime.Now;
         DateTime utcNow = DateTime.UtcNow;
         string date = now.ToString("dd-MM-yyyy hh:mm:ss tt");
@@ -87,9 +90,21 @@ class Program
         Console.WriteLine($"Trim: {strTrim}");
         Console.WriteLine($"IsNullOrEmpty: {isNullOrEmpty}");
         Console.WriteLine($"IsNullOrWhiteSpace: {isNullOrWhiteSpace}");
+        
+
+        Console.WriteLine("\nEx5****************************************************************\n");
+        
 
 
-
+        string input1 = "";
+        while (input1 != "Test")
+        {
+            Console.WriteLine("write your input");
+            input1 = Console.ReadLine();
+            Console.WriteLine(input1);
+        }
+        Console.WriteLine("enter exit");
+        Console.ReadKey();
 
 
 
